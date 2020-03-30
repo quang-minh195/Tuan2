@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Ứng dụng chuyển đổi tiền tệ</title>
-    <script src="index.js"></script>
+
+
+
 </head>
 <body>
 <style>
@@ -24,18 +26,18 @@
         <td><input style="width: 150px", height="100px" type="number" id="amount" ></td>
         <td>
             <select style="width: 150px; height: 30px" id="fcurrency">
-            <option value="Vietnam">VND</option>
-            <option value="USA">USA</option>
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
             <option value="EUR">EUR</option>
-            <option value="Won">Won</option>
+            <option value="KRW">KRW</option>
             </select>
         </td>
         <td>
             <select style="height: 30px;width: 150px" id="tcurrency">
                 <option value="VND">VND</option>
-                <option value="USA">USA</option>
+                <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
-                <option value="Won">Won</option>
+                <option value="KRW">KRW</option>
             </select>
         </td>
 
@@ -45,5 +47,8 @@
     </tr>
 
 </table>
+
+<p>Result: <Span id="result"></Span> </p>
+<script src="index.js"></script>
 </body>
 </html>
