@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính</title>
+</head>
+<body>
+<style>
+    table {
+        text-align: center;
+        width: 200px;
+        height: 250px;
+    }
+    input{
+        color: blue;
+    }
+
+</style>
+
+<table border="5px" align="center">
+    <tr>
+        <td colspan="4"><input type="text" id="display" disabled ></td>
+    </tr>
+    <tr>
+        <td><input type="button" name="so1" value="1" onclick="display.value+= '1' "></td>
+        <td><input type="button" name="so2" value="2" onclick="display.value+= '2' "></td>
+        <td><input type="button" name="so3" value="3" onclick="display.value+= '3' "></td>
+        <td><input type="button" name="cong" value="+" onclick="display.value+= '+'"></td>
+    </tr>
+    <tr>
+        <td><input type="button" name="so4" value="4" onclick="display.value+= '4' "></td>
+        <td><input type="button" name="so5" value="5" onclick="display.value+= '5' "></td>
+        <td><input type="button" name="so6" value="6" onclick="display.value+= '6' "></td>
+        <td><input type="button" name="tru" value="-" onclick="display.value+= '-' "></td>
+    </tr>
+    <tr>
+        <td><input type="button" name="so7" value="7" onclick="display.value+= '7' "></td>
+        <td><input type="button" name="so8" value="8" onclick="display.value+= '8' "></td>
+        <td><input type="button" name="so9" value="9" onclick="display.value+= '9' "></td>
+        <td><input type="button" name="nhan" value="x" onclick="display.value+= '*'"></td>
+    </tr>
+    <tr>
+        <td><input type="button" name="xoa" value="c" onclick="display.value= '' "></td>
+        <td><input type="button" name="so0" value=0 onclick="display.value+= '0' "></td>
+        <td><input type="button" name="bang" value="=" onclick="display.value= eval(display.value)"></td>
+        <td><input type="button" name="chia" value="/" onclick="display.value+= '/'"></td>
+    </tr>
+</table>
+
+
+<script>
+
+</script>
+</body>
+</html>
