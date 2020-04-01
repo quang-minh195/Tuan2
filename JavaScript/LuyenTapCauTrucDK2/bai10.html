@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính giá điện</title>
+</head>
+<body>
+<script>
+    let tt =parseInt(prompt('Nhập số điện tiêu thụ:'));
+    let bac1 =1678;
+    let bac2 =1734;
+    let bac3 =2014;
+    let bac4 =2536;
+    let bac5 =2834;
+    let bac6 =2927;
+    let phaiTra;
+    if ( tt <50){
+        phaiTra=tt*bac1;
+    }
+    else if (tt < 100) {
+        phaiTra=tt*bac2;
+    }
+    else if (tt < 200) {
+        phaiTra=tt*bac3;
+    }
+    else if (tt < 300) {
+        phaiTra=tt*bac4;
+    }
+    else if (tt < 400) {
+        phaiTra=tt*bac5;
+    }
+    else{
+        phaiTra=tt*bac6;
+    }
+    alert("số tiền phải trả là:"+phaiTra);
+</script>
+
+</body>
+</html>

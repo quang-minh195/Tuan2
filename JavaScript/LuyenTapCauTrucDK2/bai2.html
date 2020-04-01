@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen đổi sang feet</title>
+</head>
+<body>
+<h1>Chuyển đổi met sang feet</h1>
+<input type="text"id="m" onkeyup="convert('M')">Met
+<input type="text"id="f" onkeyup="convert('F')">Feet
+</body>
+<script>
+    function convert(height) {
+        let x;
+        if (height === 'M') {
+            x=document.getElementById('m').value *3.2808;
+            document.getElementById("f").value = Math.round(x);
+        } else {
+            x= document.getElementById('f').value/3.2808;
+            document.getElementById("m").value = Math.round(x);
+        }
+
+    }
+</script>
+</html>

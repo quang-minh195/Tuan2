@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuế thu nhập</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập thu nhập cá nhân:"));
+    let bac1 = 5/100;
+    let bac2 = 10/100;
+    let bac3 = 15/100;
+    let bac4 = 20/100;
+    let bac5 = 25/100;
+    let bac6 = 30/100;
+    let bac7 = 35/100;
+    let phainop;
+    if (a<=5000000){
+        phainop=a * bac1;
+    }else if (a<=10000000){
+        phainop=a * bac2
+    }else if (a<=18000000){
+        phainop=a * bac3;
+    }else if (a<=32000000) {
+        phainop = a * bac4;
+    }else if (a<=52000000){
+        phainop=a*bac5;
+    }else if (a<=80000000) {
+        phainop = a * bac6
+    }else {
+        phainop =a * bac7;
+    }
+    alert("Thuế thu nhập cá nhân là: "+phainop+ "đồng")
+
+
+
+
+</script>
+</body>
+</html>
