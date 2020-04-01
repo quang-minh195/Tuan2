@@ -26,5 +26,5 @@ function Doitien() {
         if (c =="EUR"){M = a*0.00074}
         if (c =="KRW"){M = a}
     }
-    document.getElementById("result").innerHTML=M
+    document.getElementById("result").innerHTML=M;
 }
