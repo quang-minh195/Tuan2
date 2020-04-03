@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+
+
+    <img src="../a1.jpg" height="150" width="800" id="img1" onclick="dog1()"/> <br>
+    <img src="../b1.jpg" height="150" width="800" id="img2" onclick="dog2()"/><br>
+    <img src="../c1.jpg" height="150" width="800"id="img3" onclick="dog3()"/><br>
+    <img src="../d1.jpg" height="150" width="800" id="img4" onclick="dog4()"/> <br>
+
+
+</div>
+
+<script>
+    let count1=1;
+    let count2=1;
+    let count3=1;
+    let count4=1;
+    let img1 ="../a";
+    let img2 ="../b";
+    let img3 ="../c";
+    let img4 ="../d";
+    function dog1() {
+        count1++;
+        let image1 =img1+count1+".jpg";
+        document.getElementById("img1").src=image1;
+        if(count1 == 3){
+            count1 = 0;
+        }
+        if(count1 === count2 && count1 === count3 && count1 === count4){
+            alert("ok");
+        }
+    }
+    function dog2() {
+        count2++;
+        let image1 =img2+count2+".jpg";
+        document.getElementById("img2").src=image1;
+        if(count2 == 3){
+            count2 = 0;
+        }
+        if(count1 === count2 && count1 === count3 && count1 === count4){
+            alert("ok");
+        }
+    }
+    function dog3() {
+        count3++;
+        let image1 =img3+count3+".jpg";
+        document.getElementById("img3").src=image1;
+        if(count3 == 3){
+            count3 = 0;
+        }
+        if(count1 === count2 && count1 === count3 && count1 === count4){
+            alert("ok");
+        }
+    }
+    function dog4() {
+        count4++;
+        let image1 =img4+count4+".jpg";
+        document.getElementById("img4").src=image1;
+        if(count4 == 3){
+            count4 = 0;
+        }
+
+        if(count1 === count2 && count1 === count3 && count1 === count4){
+            alert("ok");
+        }
+    }
+
+
+</script>
+</body>
+</html>
